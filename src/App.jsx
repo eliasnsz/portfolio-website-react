@@ -6,10 +6,6 @@ function App() {
   return (
     <div className="App">
       <Header/>
-
-      <video preload="metadata" playsInline controls autoPlay>
-        <source src='' />
-      </video>
     </div>
   )
 }
