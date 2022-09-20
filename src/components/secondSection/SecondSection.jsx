@@ -41,7 +41,7 @@ export default function SecondSection() {
             </p>
           </div>
           <div data-aos="fade-left" data-aos-duration="1000" data-aos-anchor-placement="top-bottom" data-aos-once="true">
-            <img src="../public/perfil.png" alt="foto-perfil" />
+            <img src="https://i.imgur.com/beFcV4k.png" alt="foto-perfil" />
           </div>
         </div>
       </div>

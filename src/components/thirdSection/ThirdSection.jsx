@@ -12,7 +12,7 @@ export default function ThirdSection() {
             
             <div className="grid-container">
               <Card 
-                img={"../../../public/adobe-mockup.jpg"}
+                img={"blob:https://imgur.com/8b660a2d-36ae-4c5b-94cf-c856018f73d0"}
                 year={"2020"}
                 title1={"Creative Cloud"}
                 title2={"Website Clone"}
