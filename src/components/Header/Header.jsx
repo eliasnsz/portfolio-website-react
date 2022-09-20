@@ -1,11 +1,21 @@
-import HamburguerMenu from '../HamburguerMenu/HamburguerMenu'
 import './Header.scss'
+import { useEffect, useState } from 'react'
 
 export default function Header () {
+  
+  const [isHeaderVisible, setHeaderVisibility] = useState(false)
+  const [isMenuOpen, toggleMenu] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setHeaderVisibility(true);
+    }, 500);
+  }, [])
+  
   return (
     <>
-      <header>
-        <div id="limiter">
+      <header className={isHeaderVisible ? "visible" : "invisible"}>
+        <div className="limiter">
           <div className="left-header">
             <svg className='logo' xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 512.000000 521.000000" preserveAspectRatio="xMidYMid meet">
               <g transform="translate(0.000000,521.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -17,13 +27,19 @@ export default function Header () {
           </div>
           <nav className="right-header">
             <ul>
-              <li>Inicio</li>
+              <li><a href="">Início</a></li>
+              <li><a href="#sobre">Sobre</a></li>
               <li>Projetos</li>
-              <li>Sobre</li>
               <li>Contato</li>
             </ul>
           </nav>
-          <HamburguerMenu/>
+          <div id="menu-icon">
+            <button id='menu-button' onClick={() => toggleMenu(!isMenuOpen)} className={isMenuOpen ? "open" : ""} >
+              <div className='line'></div>
+              <div className='line'></div>
+              <div className='line'></div>
+            </button>
+          </div>
         </div>
       </header>
     </>

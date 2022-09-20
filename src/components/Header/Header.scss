@@ -2,8 +2,22 @@
 
 header {
   background-color: #fff;
+  transition: .5s;
 
-  #limiter {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &.invisible {
+    transform: translateY(-84px);
+  }
+  &.visible {
+    transform: translateY(0px);
+  }
+  
+
+  .limiter {
     @include flex-config(row, space-between, center, "");
   }
 
@@ -50,5 +64,49 @@ nav.right-header {
   }
 }
 
+#menu-icon {
+  display: none;
+  width: fit-content;
+  cursor: pointer;
 
+  img {
+    width: 30px;
+  }
+
+  button {
+    all: unset;
+    padding: 3px;
+  }
+
+  .line {
+    width: 23px;
+    background-color: black;
+    height: 2px;
+    margin-bottom: 4px;
+    transition: .3s ease;
+    z-index: 2;
+  }
+  
+  .open {  
+    .line {
+      background-color: #fff;
+    }
+    
+    .line:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .line:nth-child(2) {
+      transform: scale(0);
+    }
+    .line:nth-child(3) {
+      transform: translateY(-4px) rotate(-45deg);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    & {
+      display: block;
+    }
+  }
+}
 
