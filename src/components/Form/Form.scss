@@ -25,7 +25,7 @@
     input {
       all: unset;
       border-bottom: 1px solid #00000054;
-      padding: 10px;
+      padding: 10px 10px 2px 10px;
       width: calc(100% - 20px);
       position: relative;
       transition: .3s ease;
@@ -43,7 +43,7 @@
       font-size: 1.2em;
       margin-top: 20px;
       width: calc(100% - 20px);
-      border-radius: 10px;
+      border-radius: 5px;
 
     }
 
