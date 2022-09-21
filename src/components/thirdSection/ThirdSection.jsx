@@ -11,34 +11,24 @@ export default function ThirdSection() {
             <p id='desc'>Meus projetos finalizados ou que estão em andamento</p>
             
             <div className="grid-container">
-              <Card 
-                img={"public/adobe-mockup.jpg"}
+              <Card
+                img={"https://i.imgur.com/iKS9ybE.jpg"}
                 year={"2020"}
-                title1={"Creative Cloud"}
-                title2={"Website Clone"}
-                href={"https://creative-cloud-website-clone.vercel.app/"}
-            />
-            <Card 
-              img={"https://st.depositphotos.com/1004338/3764/v/600/depositphotos_37647531-stock-illustration-gray-background.jpg"}
-              year={"----"}
-              title1={"Em breve"}
-              title2={""}
-              href={""}
-            />
-            <Card 
-              img={"https://st.depositphotos.com/1004338/3764/v/600/depositphotos_37647531-stock-illustration-gray-background.jpg"}
-              year={"----"}
-              title1={"Em breve"}
-              title2={""}
-              href={""}
-            />
-            <Card 
-              img={"https://st.depositphotos.com/1004338/3764/v/600/depositphotos_37647531-stock-illustration-gray-background.jpg"}
-              year={"----"}
-              title1={"Em breve"}
-              title2={""}
-              href={""}
-            />
+                title={"Creative Cloud Clone"}
+                desc={`Clone totalmente responsivo do website da Creative Cloud, 
+                  pertencente à Adobe. Esse projeto foi feito com a intenção de me 
+                  desafiar e testar meus conhecimentos, aprendi muito com ele.`}
+                hrefGit={"https://github.com/eliasnsz/creative-cloud-website-clone"}
+                hrefProject={"https://creative-cloud-website-clone.vercel.app/"}
+              />
+              <Card
+                img={"https://i.imgur.com/FcuT1Su.png"}
+                year={"----"}
+                title={"Em breve"}
+                desc={`...`}
+                hrefGit={"#"}
+                hrefProject={"#"}
+              />
             </div>
           </div>
         </div>

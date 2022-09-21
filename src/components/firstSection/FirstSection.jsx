@@ -30,7 +30,7 @@ export default function FirstSection() {
             </div>
             <div id="video-container">
               <video preload='metadata' muted autoPlay playsInline >
-                <source src='https://i.imgur.com/IffDNWR.mp4'/>
+                <source src='https://i.imgur.com/SAbfIXx.mp4'/>
               </video>
             </div>
           </div>
