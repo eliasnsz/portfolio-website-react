@@ -3,8 +3,25 @@ import { useEffect, useState } from 'react'
 
 export default function Header () {
   
-  const [isHeaderVisible, setHeaderVisibility] = useState(false)
   const [isMenuOpen, toggleMenu] = useState(false)
+  
+  
+  const [lastPosition, setLastPosition] = useState(0);
+  const [isHeaderVisible, setHeaderVisibility] = useState(true)
+
+  function handleHeaderVisibility(position) {
+
+    if (position > lastPosition) {
+      setLastPosition(position)
+      setHeaderVisibility(false)
+    } else {
+      setLastPosition(position)
+      setHeaderVisibility(true)
+
+    }
+  }
+
+  window.addEventListener("scroll", e => handleHeaderVisibility(window.scrollY)) 
 
   useEffect(() => {
     setTimeout(() => {
@@ -27,10 +44,10 @@ export default function Header () {
           </div>
           <nav className="right-header">
             <ul>
-              <li><a href="">Início</a></li>
+              <li><a href="#firstSection-container">Início</a></li>
               <li><a href="#sobre">Sobre</a></li>
-              <li>Projetos</li>
-              <li>Contato</li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#contato">Contato</a></li>
             </ul>
           </nav>
           <div id="menu-icon">

@@ -4,6 +4,10 @@ header {
   background-color: #fff;
   transition: .5s;
   user-select: none;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 
   a {
     color: inherit;
