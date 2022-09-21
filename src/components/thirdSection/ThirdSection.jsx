@@ -7,11 +7,18 @@ export default function ThirdSection() {
       <div className="container" id='projetos'>
         <div className="limiter">
           <div className="text-container">
-            <h1>Projetos</h1>
-            <p id='desc'>Meus projetos finalizados ou que estão em andamento</p>
+            <h1 data-aos="fade-right" 
+                data-aos-duration="1000"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-once="true">Projetos</h1>
+            <p data-aos="fade-right" 
+                data-aos-duration="1000"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-once="true" id='desc'>Meus projetos finalizados ou que estão em andamento</p>
             
             <div className="grid-container">
-              <Card
+              <Card 
+                dataAos={"fade-up-right"}
                 img={"https://i.imgur.com/iKS9ybE.jpg"}
                 year={"2020"}
                 title={"Creative Cloud Clone"}
@@ -22,6 +29,25 @@ export default function ThirdSection() {
                 hrefProject={"https://creative-cloud-website-clone.vercel.app/"}
               />
               <Card
+                dataAos={"fade-up-left"}
+                img={"https://i.imgur.com/FcuT1Su.png"}
+                year={"----"}
+                title={"Em breve"}
+                desc={`...`}
+                hrefGit={"#"}
+                hrefProject={"#"}
+              />
+              <Card
+                dataAos={"fade-up-right"}
+                img={"https://i.imgur.com/FcuT1Su.png"}
+                year={"----"}
+                title={"Em breve"}
+                desc={`...`}
+                hrefGit={"#"}
+                hrefProject={"#"}
+              />
+              <Card
+                dataAos={"fade-up-left"}
                 img={"https://i.imgur.com/FcuT1Su.png"}
                 year={"----"}
                 title={"Em breve"}

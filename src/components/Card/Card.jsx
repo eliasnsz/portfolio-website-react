@@ -1,9 +1,13 @@
 import './Card.scss'
 
-export default function ({ img, year, title, desc, hrefGit, hrefProject }) {
+export default function ({dataAos, img, year, title, desc, hrefGit, hrefProject }) {
   return (
     <>
-      <div id="card-container">
+      <div id="card-container"
+        data-aos={dataAos}
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
         <div style={{ backgroundImage: `url(${img})`}} 
         className="img-area">
 
