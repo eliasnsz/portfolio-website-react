@@ -1,4 +1,5 @@
 import './App.scss'
+import Contato from './components/Contato/Contato'
 import FirstSection from './components/firstSection/FirstSection'
 import Header from './components/Header/Header'
 import SecondSection from './components/secondSection/SecondSection'
@@ -15,6 +16,7 @@ function App() {
         <FirstSection />
         <SecondSection />
         <ThirdSection />
+        <Contato />
       </div>   
     </div>
   )

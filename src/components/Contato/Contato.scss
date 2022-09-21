@@ -1,0 +1,21 @@
+@import "../../App.scss";
+
+#contato {
+  margin-top: 50px;
+  background-color: black;
+
+  .limiter {
+    display: grid;
+    place-items: center;
+  }
+  
+  .text-container {
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+    
+    p {
+      font-weight: 200;
+    }
+  }
+}
