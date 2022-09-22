@@ -20,17 +20,16 @@ export default function SecondSection() {
               onde depositava muito tempo criando jogos e me divertindo. No 
               entanto, comecei a me aprofundar em 2020 quando conheci os cursos 
               de <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank">HTML, CSS3</a> e <a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" target="_blank">Javascript</a> do <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank">CursoEmVideo</a> e 
-              imediatamente me apaixonei pela área. Desde então venho estudando e me aprofundando cada vez mais.
+              imediatamente me apaixonei pela área. Desde então venho estudando e me aprofundando.
             </p>
             <br />
             <p  data-aos="fade-right" 
                 data-aos-duration="1000"
                 data-aos-anchor-placement="top-bottom"
                 data-aos-once="true">Minha escolha em relação ao front-end foi motivada pelo fato de 
-              eu sempre ter gostado muito de audiovisuais. Tenho costume de editar 
-              vídeos, fazer montagens e isso me deu uma certa facilidade para me 
-              adaptar ao front-end. Contudo já iniciei meus estudos sobre back-end 
-              e com certeza tenho planos para me aprofundar no mesmo também.</p>
+              eu sempre ter gostado de audiovisuais. Tenho costume de editar 
+              vídeos, fazer montagens e isso facilitou minha adaptação ao front-end. Contudo, já iniciei meus estudos sobre back-end 
+              e com certeza tenho planos para me aprofundar.</p>
               <br />
             <p  data-aos="fade-right" 
                 data-aos-duration="1000"
