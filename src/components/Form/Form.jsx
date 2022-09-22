@@ -23,13 +23,13 @@ export default function Form() {
           <div className='input-container'>
             <label>
               Assunto:
-              <input required placeholder='' type="text" name="Assunto" id="assunto" autoComplete='none'/>
+              <input required placeholder='Sobre o que vamos falar?' type="text" name="Assunto" id="assunto" autoComplete='none'/>
             </label>
           </div>
           <div className='input-container'>
             <label>
               Mensagem:
-              <textarea required name="Mensagem" id="msg" col="10" rows="3" ></textarea>
+              <textarea required placeholder='Digite sua mensagem' name="Mensagem" id="msg" col="10" rows="3" ></textarea>
             </label>
           </div>
           <button type="submit">Enviar</button>
