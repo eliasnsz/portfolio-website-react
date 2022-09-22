@@ -8,7 +8,7 @@ export default function Header () {
 
   const { isMenuOpen, toggleMenu } = useContext(MenuContext)
   
-  const [isHeaderVisible, setHeaderVisibility] = useState(true)
+  const [isHeaderVisible, setHeaderVisibility] = useState(false)
   const [lastPosition, setLastPosition] = useState(0);
 
   function handleHeaderVisibility(position) {
