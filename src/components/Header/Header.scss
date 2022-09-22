@@ -12,6 +12,16 @@ header {
   a {
     color: inherit;
     text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 45px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .4s ease;
+
+      &:hover {
+        background-color: black;
+        color: white;
+      }
   }
 
   &.invisible {
@@ -28,7 +38,7 @@ header {
 
   svg.logo {
     width: 75px;
-    fill: black;
+    transition: 1.2s ease;
   }
 }
 
@@ -41,18 +51,6 @@ nav.right-header {
   
     list-style: none;
 
-    li {
-      padding: 5px 15px;
-      border-radius: 45px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: .4s ease;
-
-      &:hover {
-        background-color: black;
-        color: white;
-      }
-    }
   }
 }
 
