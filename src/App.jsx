@@ -14,7 +14,7 @@ function App() {
   const [isMenuOpen, toggleMenu] = useState(false)
 
   return (
-    <div className="App">
+    <div onLoad={() => window.scrollTo(0,0)} className="App">
       <MenuContext.Provider value={{ isMenuOpen, toggleMenu }}>
         <Header />
       </MenuContext.Provider>
