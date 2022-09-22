@@ -7,8 +7,14 @@ export default function Contato() {
       <div className="container" id='contato'>
         <div className="limiter">
           <div className="text-container">
-            <h1>Contato</h1>
-            <p>Vamos conversar? Me mande um email.</p>
+            <h1 data-aos="fade-right" 
+                data-aos-duration="1000"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-once="true">Contato</h1>
+            <p data-aos="fade-left" 
+                data-aos-duration="1000"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-once="true">Vamos conversar? Me mande um email.</p>
           </div>
           
           <Form />

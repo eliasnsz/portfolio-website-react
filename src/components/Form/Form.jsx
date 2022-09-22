@@ -3,7 +3,10 @@ import './Form.scss'
 export default function Form() {
   return (
     <>
-      <div className="form-container">
+      <div className="form-container" data-aos="fade-up" 
+                data-aos-duration="1000"
+                data-aos-anchor-placement="top-bottom"
+                data-aos-once="true">
         <form action="https://formsubmit.co/eliasnsouza1245@gmail.com" method="POST">
           <div className='input-container'>
             <label>

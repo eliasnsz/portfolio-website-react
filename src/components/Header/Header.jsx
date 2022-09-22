@@ -1,35 +1,30 @@
 import './Header.scss'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import Menu from '../MenuHamburguer/Menu';
 import { MenuContext } from '../../App';
 
 
 export default function Header () {
 
-
-  const [isMenuOpen, toggleMenu] = useState(false)
+  const { isMenuOpen, toggleMenu } = useContext(MenuContext)
   
-  
-  const [lastPosition, setLastPosition] = useState(0);
   const [isHeaderVisible, setHeaderVisibility] = useState(true)
+  const [lastPosition, setLastPosition] = useState(0);
 
-  if(!isMenuOpen) {
-    function handleHeaderVisibility(position) {
+  function handleHeaderVisibility(position) {
+    if(position === lastPosition || position < 83) return
 
-      
-      if(position === lastPosition || position < 83) return
-
-      if (position > lastPosition) {
-        setLastPosition(position)
-        setHeaderVisibility(false)
-      } else {
-        setLastPosition(position)
-        setHeaderVisibility(true)
-      }
+    if (position > lastPosition) {
+      setLastPosition(position)
+      setHeaderVisibility(false)
+    } else {
+      setLastPosition(position)
+      setHeaderVisibility(true)
     }
   }
 
   window.addEventListener("scroll", e => handleHeaderVisibility(window.scrollY)) 
+
 
   useEffect(() => {
     setTimeout(() => {
@@ -40,9 +35,8 @@ export default function Header () {
   return (
     <>
       <header className={isHeaderVisible ? "visible" : "invisible"}>
-        <MenuContext.Provider value={{ isMenuOpen, toggleMenu }}>
+        
           <Menu/>
-        </MenuContext.Provider>
 
 
         <div className="limiter">

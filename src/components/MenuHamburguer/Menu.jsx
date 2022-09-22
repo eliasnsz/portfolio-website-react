@@ -6,6 +6,10 @@ export default function Menu() {
   
   const { isMenuOpen, toggleMenu } = useContext(MenuContext)
 
+  isMenuOpen ? 
+    window.document.querySelector("html").style.overflowY = "hidden" :
+    window.document.querySelector("html").style.overflowY = "auto"
+
   return (
     <>
       <section id='hamburguer' className={ isMenuOpen ? "open" : "close"}>
